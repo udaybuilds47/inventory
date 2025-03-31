@@ -103,7 +103,7 @@ export default function Reordering() {
                 Monthly replenishment over the last 6 months
               </CardDescription>
             </CardHeader>
-            <CardContent className="pl-2">
+            <CardContent>
               <BarChartComponent title="" data={replenishmentData} dataKey="month" categories={["value"]} />
             </CardContent>
           </Card>

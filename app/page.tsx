@@ -90,14 +90,14 @@ export default function Dashboard() {
         </div>
 
         {/* Revenue Trend + Top SKUs Chart */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6 w-full">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6 w-full flex-1">
           {/* Revenue Trend */}
-          <Card>
+          <Card className="h-full">
             <CardHeader className="pb-2">
               <CardTitle>Revenue Trend</CardTitle>
               <CardDescription>Monthly revenue over the last 6 months</CardDescription>
             </CardHeader>
-            <CardContent className="pl-2">
+            <CardContent className="">
               <LineChartComponent
                 title=""
                 data={revenueData}
@@ -108,12 +108,12 @@ export default function Dashboard() {
           </Card>
 
           {/* Top SKUs by Sales */}
-          <Card>
+          <Card className="h-full">
             <CardHeader className="pb-2">
               <CardTitle>Top SKUs by Sales</CardTitle>
               <CardDescription>Units sold in the last 30 days</CardDescription>
             </CardHeader>
-            <CardContent className="pl-2">
+            <CardContent>
               <BarChartComponent
                 title=""
                 data={topSkuData}
@@ -124,12 +124,12 @@ export default function Dashboard() {
           </Card>
 
           {/* Stock by Store */}
-          <Card>
+          <Card className="h-full">
             <CardHeader className="pb-2">
               <CardTitle>Stock Levels by Store</CardTitle>
               <CardDescription>Current inventory levels</CardDescription>
             </CardHeader>
-            <CardContent className="pl-2">
+            <CardContent className="">
               <BarChartComponent
                 title=""
                 data={stockLevelData}

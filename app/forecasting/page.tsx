@@ -12,6 +12,9 @@ const forecastData = [
   { month: "Apr", Forecast: 7500, Actual: 7000 },
   { month: "May", Forecast: 6300, Actual: 6000 },
   { month: "Jun", Forecast: 8500, Actual: 8000 },
+  { month: "Jul", Forecast: 9000, Actual: null },
+  { month: "Aug", Forecast: 9200, Actual: null },
+  { month: "Sep", Forecast: 9500, Actual: null },
 ]
 
 const variabilityData = [
@@ -73,7 +76,7 @@ export default function ForecastingPage() {
                 Forecast vs. Actual Comparison
               </CardDescription>
             </CardHeader>
-            <CardContent className="pl-2">
+            <CardContent>
               <LineChartComponent
                 title=""
                 data={forecastData}
